@@ -17,6 +17,7 @@
       body {
         margin: 0;
         padding: 0;
+        background-color: #f6f9fc;
       }
 
       table {
@@ -30,6 +31,28 @@
         border: 0;
       }
 
+      .wrapper {
+        width: 100%;
+        table-layout: fixed;
+        background-color: #f6f9fc;
+        padding-bottom: 40px;
+      }
+
+      .webkit {
+        max-width: 600px;
+        background-color: #ffffff;
+      }
+
+      .outer {
+        margin: 0 auto;
+        /* 100% of parent element .webkit */
+        width: 100%;
+        max-width: 600px;
+        border-spacing: 0;
+        font-family: sans-serif;
+        color: #4a4a4a;
+      }
+
       @media screen and (max-width: 600px) {
       }
 
@@ -37,5 +60,11 @@
       }
     </style>
   </head>
-  <body></body>
+  <body>
+    <center class="wrapper">
+      <div class="webkit">
+        <table class="outer" align="center"></table>
+      </div>
+    </center>
+  </body>
 </html>
